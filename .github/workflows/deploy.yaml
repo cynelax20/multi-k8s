@@ -33,7 +33,8 @@ jobs:
 
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
-
+# It's not necessary to dump all project files to aws, intead only th yml config can be sent to indicate which images to pull from docker hub
+#this is currently sending the whole project 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         with:
