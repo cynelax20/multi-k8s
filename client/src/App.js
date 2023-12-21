@@ -18,7 +18,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Here is a major veersion change
+            A Kubernetes version
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
